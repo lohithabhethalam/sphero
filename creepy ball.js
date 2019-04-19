@@ -66,7 +66,7 @@ async function play() {
 		await speak(buildString('Plus one for a total of', hearts, 'hearts'), true);
 		await strobe({ r: 255, g: 0, b: 4 }, 0.07, hearts);
 	} else {
-		await Sound.Personality.Cry.play(true);
+		await Sound.Personality.Sad.play(true);
 		await speak(buildString('You\'ve neglected your creature. You have', hearts, 'hearts'), true);
 		await strobe({ r: 255, g: 0, b: 4 }, 0.07, hearts);
 	}
@@ -89,7 +89,7 @@ async function rockMe() {
 		await speak(buildString('Plus one for a total of', hearts, 'hearts'), true);
 		await strobe({ r: 255, g: 0, b: 4 }, 0.07, hearts);
 	} else {
-		await Sound.Personality.Cry.play(true);
+		await Sound.Personality.Sad.play(true);
 		await speak(buildString('You\'ve neglected your creature. You have', hearts, 'hearts'), true);
 		await strobe({ r: 255, g: 0, b: 4 }, 0.07, hearts);
 	}
